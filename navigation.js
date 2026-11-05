@@ -1,5 +1,7 @@
 
 
+
+
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
 const navigationLinks = document.querySelectorAll("nav a");
@@ -11,4 +13,6 @@ navigationLinks.forEach(function(link) {
         link.classList.add("nav-active");
     }
 });
+
+
 
