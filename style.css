@@ -1200,3 +1200,88 @@ img {
         padding: 24px 16px;
     }
 }
+
+/* Модальне вікно додавання улюбленця */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    color: #27815f;
+    margin-bottom: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#petForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#petForm input,
+#petForm select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#petForm button {
+    padding: 12px;
+    background: #27815f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-error {
+    color: #d93025;
+    font-size: 14px;
+}
+
+.event-hidden {
+    display: none !important;
+}
+
+nav a.nav-active {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
