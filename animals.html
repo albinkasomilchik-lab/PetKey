@@ -24,22 +24,49 @@
                 <p>Вітаємо, Альбіно. Усе важливе для Руни й Міко — тут.</p>
             </div>
 
-            <a href="#" id="addPetButton" class="add-pet-button">+ Додати тварину</a>
+           <a href="#" class="add-pet-button" id="addPetButton">+ Додати тварину</a>
         
         </div>
+        <div class="modal" id="petModal">
+    <div class="modal-content">
+        <button type="button" id="closeModal" class="close-modal">×</button>
+
+        <h2>Додати нового улюбленця</h2>
+
+        <form id="petForm">
+            <label for="petName">Ім'я тварини:</label>
+            <input type="text" id="petName" placeholder="Введіть ім'я">
+
+            <label for="petType">Вид тварини:</label>
+            <select id="petType">
+                <option value="">Оберіть вид</option>
+                <option value="Собака">Собака</option>
+                <option value="Кіт">Кіт</option>
+                <option value="Інше">Інше</option>
+            </select>
+
+            <label for="petAge">Вік:</label>
+            <input type="number" id="petAge" min="0" max="50" placeholder="Вік у роках">
+
+            <p id="formError" class="form-error"></p>
+
+            <button type="submit">Додати улюбленця</button>
+        </form>
+    </div>
+</div>
             
 <div class="animals-list">
            <div class="animal">
             
     <h3>Руна</h3>
-   <img src="runa.jpg" alt="Руна">
+    <img src="images/runa.jpg" alt="Руна">
     <p>Профіль улюблениці та інформація про її здоров'я.</p>
     <a href="emergency.html">Екстрений профіль</a>
 </div>
 
             <div class="animal">
     <h3>Міко</h3>
-    <img src="miko.jpg" alt="Міко">
+    <img src="images/miko.jpg" alt="Міко">
     <p>Профіль улюбленця та інформація про його здоров'я.</p>
     <a href="emergency-miko.html">Екстрений профіль</a>
 </div>
@@ -47,6 +74,9 @@
      <div class="pets-bottom">
     <div class="pets-events">
         <h2>Найближчі події</h2>
+        <button type="button" id="toggleEventsButton">
+    Приховати події
+</button>
 
         <div class="event">
             <span>03 жов</span>
@@ -85,10 +115,11 @@
 </section>
     </main>
 
-    <footer>
+       <footer>
         <p>PetKey — твій друг починається тут.</p>
     </footer>
-<script src="script.js"></script>
-<script src="navigation.js"></script>
+
+    <script src="script.js"></script>
+    <script src="navigation.js"></script>
 </body>
 </html>
