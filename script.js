@@ -1,4 +1,5 @@
 
+
 // Знаходимо елементи сторінки
 const addPetButton = document.getElementById("addPetButton");
 const petModal = document.getElementById("petModal");
@@ -87,3 +88,4 @@ if (toggleEventsButton && events.length > 0) {
             : "Приховати події";
     });
 }
+
